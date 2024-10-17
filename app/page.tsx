@@ -10,9 +10,9 @@ export default function Page() {
           <Image
             src="/images/headshot.png"
             alt="David Wang"
-            width={100}
-            height={100}
-            className="rounded-full mr-6"
+            width={150}
+            height={150}
+            className="rounded-lg mr-6"
           />
           <div>
             <h1 className="text-3xl font-bold mb-2">
