@@ -1,8 +1,7 @@
-import Link from 'next/link'
 
 const navItems = {
-  '#home': {
-    name: 'home',
+  '#about': {
+    name: 'about',
   },
   '#experience': {
     name: 'experience',
@@ -14,27 +13,22 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
-      <div className="lg:sticky lg:top-20">
-        <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-          id="nav"
-        >
-          <div className="flex flex-row space-x-0 pr-10">
-            {Object.entries(navItems).map(([path, { name }]) => {
-              return (
-                <a
-                  key={path}
-                  href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
-                >
-                  {name}
-                </a>
-              )
-            })}
-          </div>
-        </nav>
+    <nav className="fixed top-0 left-0 right-0 bg-white dark:bg-black shadow-md z-10">
+      <div className="max-w-xl mx-auto px-4 py-2 flex items-center justify-between">
+        <div className="flex space-x-4">
+          {Object.entries(navItems).map(([path, { name }]) => {
+            return (
+              <a
+                key={path}
+                href={path}
+                className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200"
+              >
+                {name}
+              </a>
+            )
+          })}
+        </div>
       </div>
-    </aside>
+    </nav>
   )
 }

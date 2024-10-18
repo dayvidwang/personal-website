@@ -60,14 +60,14 @@ export default function RootLayout({
           sizes="32x32"
         />
       </head>
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
+      <body className="antialiased">
+        <Navbar />
+        <main className="max-w-xl mx-auto px-4 mt-16 mb-8">
           {children}
           <Footer />
-          <Analytics />
-          <SpeedInsights />
         </main>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

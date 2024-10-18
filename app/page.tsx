@@ -5,7 +5,7 @@ import { experienceData } from './data/experience'
 export default function Page() {
   return (
     <div className="max-w-2xl mx-auto py-8">
-      <section id="home" className="mb-16">
+      <section id="about" className="mb-16">
         <div className="flex items-center mb-6">
           <Image
             src="/images/headshot.png"
