@@ -40,7 +40,7 @@ export default function Page() {
         <p className="text-lg leading-relaxed">
           👋 Hi! I'm David. I'm currently a senior at UC Santa Barbara studying Computer Science and one of the founding ML Engineers at <a href="https://alphadesign.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Alpha Design</a> to build AI agents for chip design.
           <br /><br />
-          I'm also an undergraduate researcher in the UCSB NLP Lab, where I'm currently working on generating synthetic datasets for training AI agents. My research interests lie primarily in Machine Learning, Natural Language Processing, and Distributed Systems.
+          I'm also an undergraduate researcher in the UCSB NLP Lab, where I'm currently working on generating synthetic datasets for training and evaluating AI agents. My research interests lie primarily in Machine Learning, Natural Language Processing, and Distributed Systems.
           <br /><br />
           In the past I've worked as a Software Engineer Intern at GlossGenius, Snowflake, C3.AI, and Viasat.
           <br /><br />
@@ -76,8 +76,14 @@ export default function Page() {
           <h3 className="text-2xl font-semibold mb-4">Ongoing Research</h3>
           <h4 className="text-xl mb-3">Automatic Task Generation for LLM Agents</h4>
           <p className="mb-4">
-            Developing a scalable method for generating a dataset of realistic web tasks for training AI web agents.
+            Developing a scalable method for generating a dataset of realistic web tasks for training and evaluating AI web agents.
           </p>
+          {/* <a
+            href="/research/autotaskgen"
+            className="text-blue-600 hover:underline"
+          >
+            Read the preprint
+          </a> */}
         </div>
         <div className="mb-12">
           <h3 className="text-2xl font-semibold mb-4">Past Research</h3>

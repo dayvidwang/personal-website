@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default function ResearchPage() {
     return (
@@ -8,8 +7,14 @@ export default function ResearchPage() {
                 <h2 className="text-2xl font-semibold mb-4">Ongoing Research</h2>
                 <h3 className="text-xl mb-3">Automatic Task Generation for LLM Agents</h3>
                 <p className="mb-4">
-                    Developing a scalable method for generating a dataset of realistic web tasks for training AI web agents.
+                    Developing a scalable method for generating a dataset of realistic web tasks for training AI web agents
                 </p>
+                <a
+                    href="/research/autotaskgen"
+                    className="text-blue-600 hover:underline"
+                >
+                    Read the preprint
+                </a>
             </div>
             <div className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4">Past Research</h2>
